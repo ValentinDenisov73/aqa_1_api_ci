@@ -10,7 +10,7 @@ build: off  # будем использовать свой скрипт сбор
 
 install:
   # запускаем SUT (& означает, что в фоновом режиме не блокируем терминал для запуска тестов)
-  - java -Duser.language=en -Duser.country=US -jar app-mbank.jar
+  - java -jar ./artifacts/app-mbank.jar &
 
 build_script:
   - chmod +x gradlew
